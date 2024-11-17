@@ -156,8 +156,8 @@ class YandexFreeTranslate():
 				ssl._create_default_https_context =  ssl.create_default_context
 			if self.key == "": self.key = self._get_key()
 			if source == "auto": source = ""
-			if len(source) != 0 and len(source) != 2: raise ValueError("source")
-			if len(target) == 0 or len(target) > 2: raise ValueError("target")
+			#if len(source) != 0 and len(source) != 2: raise ValueError("source")
+			#if len(target) == 0 or len(target) > 2: raise ValueError("target")
 			if text == "": raise ValueError("text")
 			if source==target: return text
 			if source == "": lang = target
